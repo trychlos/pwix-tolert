@@ -17,7 +17,7 @@ Very simple indeed. Just import the globally exported object, and enjoy:
 ```
     import { tlTolert } from 'meteor/pwix:tolert';
     ...
-    tlTolert.alert( 'An alert message' );
+    tlTolert.info( 'An information message' );
 ```
 
 ## Configuration
@@ -57,3 +57,7 @@ These four methods use the corresponding Bootstrap color codes as a colored back
 This is just a placeholder that you have to include anywhere in your application main layout.
 
 It will not take any place inside your layout as only (temporarily) visible over the window.
+
+---
+P. Wieser
+- Last updated on 2023, Jan. 27th
