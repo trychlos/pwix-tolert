@@ -1,8 +1,8 @@
 /*
- * pwi:tolert/src/client/js/config.js
+ * pwix:tolert/src/client/js/config.js
  */
 
-console.log( 'pwi:tolert/src/client/config.js defining globally exported tlTolert object' );
+console.log( 'pwix:tolert/src/client/config.js defining globally exported tlTolert object' );
 
 tlTolert = {
 
@@ -12,7 +12,7 @@ tlTolert = {
     },
 
     configure: function( o ){
-        console.log( 'pwi:tolert configure() with', o );
+        console.log( 'pwix:tolert configure() with', o );
         tlTolert.conf = {
             ...tlTolert.conf,
             ...o

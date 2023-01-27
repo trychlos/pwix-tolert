@@ -1,5 +1,5 @@
 /*
- * pwi:tolert/src/client/components/tlMessage/tlMessage.js
+ * pwix:tolert/src/client/components/tlMessage/tlMessage.js
  */
 
 import '../../js/index.js';

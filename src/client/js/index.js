@@ -1,5 +1,5 @@
 /*
- * pwi:tolert/src/client/js/index.js
+ * pwix:tolert/src/client/js/index.js
  */
 
 import './config.js';
