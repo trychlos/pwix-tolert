@@ -13,6 +13,6 @@ import './tlMessage.html';
 Template.tlMessage.helpers({
     // provides a list of current messages to be displayed
     msgList(){
-        return pwiTolert.client.Messages.find();
+        return tlTolert.client.Messages.find();
     }
 });

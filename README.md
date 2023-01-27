@@ -15,16 +15,16 @@ _Disclaimer_: this is not my own idea, but don't remember where I have found tha
 Very simple indeed. Just import the globally exported object, and enjoy:
 
 ```
-    import { pwiTolert } from 'meteor/pwix:tolert';
+    import { tlTolert } from 'meteor/pwix:tolert';
     ...
-    pwiTolert.alert( 'An alert message' );
+    tlTolert.alert( 'An alert message' );
 ```
 
 ## Configuration
 
 Package is very simple, so only provides one configuration option.
 
-Calling `pwiTolert.configure()`, passing your configuration object as a single parameter, from your top-level code, is enough.
+Calling `tlTolert.configure()`, passing your configuration object as a single parameter, from your top-level code, is enough.
 
 <table>
 <tr><td style="vertical-align:top;">
@@ -39,14 +39,14 @@ Defaut value is 3 seconds (3000 ms).
 
 ### A global object
 
-`pwiTolert`
+`tlTolert`
 
 ### (client-only) methods attached to the global object
 
-- `pwiTolert.error()`
-- `pwiTolert.info()`
-- `pwiTolert.success()`
-- `pwiTolert.warning()`
+- `tlTolert.error()`
+- `tlTolert.info()`
+- `tlTolert.success()`
+- `tlTolert.warning()`
 
 These four methods use the corresponding Bootstrap color codes as a colored background of the tolert.
 

@@ -2,9 +2,9 @@
  * pwi:tolert/src/client/js/config.js
  */
 
-console.log( 'pwi:tolert/src/client/config.js defining globally exported pwiTolert object' );
+console.log( 'pwi:tolert/src/client/config.js defining globally exported tlTolert object' );
 
-pwiTolert = {
+tlTolert = {
 
     conf: {
         // timeout in ms to erase the message after having been displayed
@@ -13,8 +13,8 @@ pwiTolert = {
 
     configure: function( o ){
         console.log( 'pwi:tolert configure() with', o );
-        pwiTolert.conf = {
-            ...pwiTolert.conf,
+        tlTolert.conf = {
+            ...tlTolert.conf,
             ...o
         };
     },
@@ -25,7 +25,7 @@ pwiTolert = {
      * @param {String|Exception} err 
      */
     error( err ){
-        pwiTolert.client.display({
+        tlTolert.client.display({
             type: 'danger',
             message: ( typeof err === 'string' ) ? err : err.message
         });
@@ -37,7 +37,7 @@ pwiTolert = {
      * @param {String} msg
      */
     info( msg ){
-        pwiTolert.client.display({
+        tlTolert.client.display({
             type: 'info',
             message: msg
         });
@@ -49,7 +49,7 @@ pwiTolert = {
      * @param {String} msg
      */
     success( msg ){
-        pwiTolert.client.display({
+        tlTolert.client.display({
             type: 'success',
             message: msg
         });
@@ -61,7 +61,7 @@ pwiTolert = {
      * @param {String} msg
      */
     warning( msg ){
-        pwiTolert.client.display({
+        tlTolert.client.display({
             type: 'warning',
             message: msg
         });

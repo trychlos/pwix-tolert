@@ -13,5 +13,5 @@ Template.tl_display.onRendered( function(){
     console.log( 'pwi:tolert', self.data.msg.type, self.data.msg.message );
 
     // remove the message from our local collection after a reasonable time
-    Meteor.setTimeout( function(){ pwiTolert.client.Messages.remove( self.data.msg._id ); }, pwiTolert.conf.timeout );
+    Meteor.setTimeout( function(){ tlTolert.client.Messages.remove( self.data.msg._id ); }, tlTolert.conf.timeout );
 });
