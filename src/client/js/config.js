@@ -12,7 +12,7 @@ tlTolert = {
     },
 
     configure: function( o ){
-        //console.log( 'pwix:tolert configure() with', o );
+        console.log( 'pwix:tolert configure() with', o );
         tlTolert.conf = {
             ...tlTolert.conf,
             ...o
