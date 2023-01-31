@@ -1,6 +1,6 @@
 Package.describe({
     name: 'pwix:tolert',
-    version: '1.0.2',
+    version: '1.1.0',
     summary: 'A Bootstrap-based Meteor package which provides toast-alert combination as auto-remove messages',
     git: 'https://github.com/trychlos/pwix-tolert',
     documentation: 'README.md'
@@ -12,6 +12,7 @@ Package.onUse( function( api ){
         'tlTolert'
     ]);
     api.mainModule( 'src/client/js/index.js', 'client' );
+    api.mainModule( 'src/server/js/index.js', 'server' );
 });
 
 Package.onTest( function( api ){
@@ -27,9 +28,9 @@ function configure( api ){
     api.use( 'ecmascript', 'client' );
     api.use( 'less@4.0.0', 'client' );
     api.use( 'mongo', 'client' );
+    api.use( 'tmeasday:check-npm-versions@1.0.2', 'server' );
     api.addFiles( 'src/client/components/tlMessage/tlMessage.js', 'client' );
 }
 
-Npm.depends({
-    bootstrap: '5.2.1'
-});
+// NPM dependencies are checked in /src/server/js/check_npms.js
+// See also https://guide.meteor.com/writing-atmosphere-packages.html#npm-dependencies
