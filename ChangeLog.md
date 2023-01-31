@@ -1,4 +1,4 @@
-# pwix:i18n
+# pwix:tolert
 
 ## ChangeLog
 
