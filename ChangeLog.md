@@ -1,6 +1,4 @@
-# pwix:tolert
-
-## ChangeLog
+# pwix:tolert - ChangeLog
 
 | Version | Release    | Content |
 | ---:    | :---       | :---    |
