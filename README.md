@@ -42,10 +42,21 @@ Please note, as an explicit reminder for the fools, that, because the Meteor pac
 
 ### (client-only) methods attached to the global object
 
-- `tlTolert.error()`
-- `tlTolert.info()`
 - `tlTolert.success()`
+
+    ![success](/maintainer/png/success.png)
+
+- `tlTolert.error()`
+
+    ![error](/maintainer/png/error.png)
+
 - `tlTolert.warning()`
+
+    ![warning](/maintainer/png/warning.png)
+
+- `tlTolert.info()`
+
+    ![info](/maintainer/png/info.png)
 
 These four methods use the corresponding Bootstrap color codes as a colored background of the tolert.
 
