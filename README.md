@@ -1,4 +1,4 @@
-# pwix:tolert - README
+# pwix:tolert
 
 ## What is it ?
 
@@ -22,18 +22,17 @@ Very simple indeed. Just import the globally exported object, and enjoy:
 
 ## Configuration
 
-Package is very simple, so only provides one configuration option.
+The package's behavior can be configured through a call to the `tlTolert.configure()` method, with just a single javascript object argument, which itself should only contains the options you want override.
 
-Calling `tlTolert.configure()`, passing your configuration object as a single parameter, from your top-level code, is enough.
+Package is very simple, has a single configuration option:
 
-<table>
-<tr><td style="vertical-align:top;">
-<code>timeout</code>
-</td><td style="vertical-align:top;">
-The timeout, in ms, to erase the displayed message.<br />
-Defaut value is 3 seconds (3000 ms).
-</td></tr>
-</table>
+- `timeout`
+
+    The timeout, in ms, to erase the displayed message.
+
+    Defaut value is 3 seconds (3000 ms).
+
+Please note, as an explicit reminder for the fools, that, because the Meteor packages are instanciated at application level, they can be configured once at most, and only once at most. Each addtionnal call to `tlTolert.configure()` will just override the previous one. You have been warned: **only the application should configure a package**.
 
 ## Provides
 
@@ -50,11 +49,15 @@ Defaut value is 3 seconds (3000 ms).
 
 These four methods use the corresponding Bootstrap color codes as a colored background of the tolert.
 
-### Helper
+### Blaze components
 
-- `tlMessage`
+#### `tlMessage`
 
-This is just a placeholder that you have to include anywhere in your application main layout.
+This is just a placeholder that you have to include anywhere in your application main layout:
+
+```
+    {{> tlMessage }}
+```
 
 It will not take any place inside your layout as only (temporarily) visible over the window.
 
@@ -76,4 +79,4 @@ Each of these dependencies should be installed at application level:
 
 ---
 P. Wieser
-- Last updated on 2023, Jan. 31st
+- Last updated on 2023, Apr. 30th
