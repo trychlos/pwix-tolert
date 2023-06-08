@@ -1,7 +1,7 @@
 <template name="tl_display">
     <div class="tl-display">
 
-        <div class="alert alert-dismissible alert-{{ msg.type }} fade show" role="alert">
+        <div class="alert alert-dismissible alert-{{ msg.type }} fade show" role="alert" data-tl-count="{{ msg.count }}">
             {{ msg.message }}
         </div>
 

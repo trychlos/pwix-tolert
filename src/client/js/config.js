@@ -25,7 +25,7 @@ tlTolert = {
      * @param {String|Exception} err 
      */
     error( err ){
-        tlTolert.client.display({
+        tlTolert._client.display({
             type: 'danger',
             message: ( typeof err === 'string' ) ? err : err.message
         });
@@ -37,10 +37,18 @@ tlTolert = {
      * @param {String} msg
      */
     info( msg ){
-        tlTolert.client.display({
+        tlTolert._client.display({
             type: 'info',
             message: msg
         });
+    },
+
+    /**
+     * Erase the oldest message, shifting the stack
+     * @locus Client
+     */
+    pull(){
+        tlTolert._client.deleteOldest();
     },
 
     /**
@@ -49,7 +57,7 @@ tlTolert = {
      * @param {String} msg
      */
     success( msg ){
-        tlTolert.client.display({
+        tlTolert._client.display({
             type: 'success',
             message: msg
         });
@@ -61,7 +69,7 @@ tlTolert = {
      * @param {String} msg
      */
     warning( msg ){
-        tlTolert.client.display({
+        tlTolert._client.display({
             type: 'warning',
             message: msg
         });

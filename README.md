@@ -36,11 +36,14 @@ Please note, as an explicit reminder for the fools, that, because the Meteor pac
 
 ## Provides
 
-### A global object
+### `tlTolert`
 
-`tlTolert`
+The globally exported object.
 
-### (client-only) methods attached to the global object
+
+### Methods
+
+All these methods are only available on the client side.
 
 - `tlTolert.success()`
 
@@ -59,6 +62,12 @@ Please note, as an explicit reminder for the fools, that, because the Meteor pac
     ![info](/maintainer/png/info.png)
 
 These four methods use the corresponding Bootstrap color codes as a colored background of the tolert.
+
+- `tlTolert.pull()`
+
+    Erase the oldest message.
+
+    Note: the oldest message is automatically erased after the configured timeout. This method is defined for tests purposes.
 
 ### Blaze components
 
