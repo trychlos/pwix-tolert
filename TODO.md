@@ -12,7 +12,8 @@
 | ---: | :---       | :---                       |
 |    2 | 2023- 6- 8 | Have a timeout value (-1) which disable it: the messages keep displayed |
 |    4 | 2023- 6- 8 | Have a configuration option to stack from the bottom instead of the top |
-|    5 |  |  |
+|    5 | 2023- 6- 8 | accept HTML content |
+|    6 |  |  |
 
 ---
 ## Done
