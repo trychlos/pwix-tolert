@@ -10,7 +10,6 @@
 
 |   Id | Date       | Description and comment(s) |
 | ---: | :---       | :---                       |
-|    4 | 2023- 6- 8 | Have a configuration option to stack from the bottom instead of the top |
 |    6 |  |  |
 
 ---
@@ -24,6 +23,8 @@
 |      | 2023- 6-11 | done |
 |    3 | 2023- 6- 8 | New pull() method |
 |      | 2023- 6- 8 | done |
+|    4 | 2023- 6- 8 | Have a configuration option to stack from the bottom instead of the top |
+|      | 2023- 6-11 | done |
 |    5 | 2023- 6- 8 | accept HTML content |
 |      | 2023- 6-11 | done |
 

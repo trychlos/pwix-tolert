@@ -26,6 +26,14 @@ The package's behavior can be configured through a call to the `tlTolert.configu
 
 Package is very simple, has a single configuration option:
 
+- `stackFromTop`
+
+    Whether the messages are stackable from the top of the screen ?
+
+    Defauts to `true`.
+
+    When `false`, messages are stacked from the bottom of the screen.
+
 - `timeout`
 
     The timeout, in ms, to erase the displayed message.

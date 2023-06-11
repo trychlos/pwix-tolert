@@ -7,11 +7,11 @@ tlTolert._client = {
     deleteOldest(){
         const array = tlTolert._client.Messages.find({}, { sort: { stamp: 1 }}).fetch();
         if( array.length ){
-            //console.debug( array );
-            //console.debug( $( '.tlMessage .alert' ));
             const height = parseInt( $( '.tl-display .alert[data-tl-count="0"]' ).css( 'height' ));
-            //console.debug( '-='+(height+CSS_MARGIN)+'px' );
-            $( '.tlMessage .alert' ).css({ top: '-='+(height+CSS_MARGIN)+'px' });
+            const start = tlTolert.conf.stackFromTop ? 'top' : 'bottom';
+            let args = {};
+            args[start] = '-=' + (height+CSS_MARGIN) + 'px'
+            $( '.tlMessage .alert' ).css( args );
             tlTolert._client.Messages.remove({ _id: array[0]._id });
         }
     },

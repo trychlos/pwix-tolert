@@ -8,11 +8,12 @@ tlTolert = {
 
     conf: {
         // timeout in ms to erase the message after having been displayed
-        timeout: 3000
+        timeout: 3000,
+        stackFromTop: true
     },
 
     configure: function( o ){
-        console.log( 'pwix:tolert configure() with', o );
+        console.log( 'tltolert.configure() with', o, 'building', tlTolert.conf );
         tlTolert.conf = {
             ...tlTolert.conf,
             ...o

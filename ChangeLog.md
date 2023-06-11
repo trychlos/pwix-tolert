@@ -7,6 +7,7 @@
     Release date: xxx
 
     - Accept HTML content (todo #5)
+    - Define 'stackFromTop' configuration option to stack from the bottom instead of the top (todo #4)
     - Disable the timeout on values less or equal to zero (todo #2)
     - Remove console.debug() message
 
