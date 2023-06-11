@@ -9,7 +9,9 @@ tlTolert._client = {
         if( array.length ){
             //console.debug( array );
             //console.debug( $( '.tlMessage .alert' ));
-            $( '.tlMessage .alert' ).css({ top: '-='+CSS_SHIFT+CSS_UNIT });
+            const height = parseInt( $( '.tl-display .alert[data-tl-count="0"]' ).css( 'height' ));
+            //console.debug( '-='+(height+CSS_MARGIN)+'px' );
+            $( '.tlMessage .alert' ).css({ top: '-='+(height+CSS_MARGIN)+'px' });
             tlTolert._client.Messages.remove({ _id: array[0]._id });
         }
     },

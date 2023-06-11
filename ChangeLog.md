@@ -6,6 +6,7 @@
 
     Release date: xxx
 
+    - Accept HTML content (todo #5)
     - Disable the timeout on values less or equal to zero (todo #2)
     - Remove console.debug() message
 

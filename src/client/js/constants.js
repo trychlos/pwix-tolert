@@ -6,6 +6,5 @@
 
 // non exported
 
-CSS_TOP = 1;
-CSS_SHIFT = 4;
-CSS_UNIT = 'em';
+CSS_TOP = '1em';
+CSS_MARGIN = 8; // pixels
