@@ -32,6 +32,8 @@ Package is very simple, has a single configuration option:
 
     Defaut value is 3 seconds (3000 ms).
 
+    Any value less or equal to zero disables the timeout.
+
 Please note, as an explicit reminder for the fools, that, because the Meteor packages are instanciated at application level, they can be configured once at most, and only once at most. Each addtionnal call to `tlTolert.configure()` will just override the previous one. You have been warned: **only the application should configure a package**.
 
 ## Provides

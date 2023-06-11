@@ -10,7 +10,6 @@
 
 |   Id | Date       | Description and comment(s) |
 | ---: | :---       | :---                       |
-|    2 | 2023- 6- 8 | Have a timeout value (-1) which disable it: the messages keep displayed |
 |    4 | 2023- 6- 8 | Have a configuration option to stack from the bottom instead of the top |
 |    5 | 2023- 6- 8 | accept HTML content |
 |    6 |  |  |
@@ -22,6 +21,8 @@
 | ---: | :---       | :---                       |
 |    1 | 2023- 6- 7 | Additional message should stack and not override the still presents |
 |      | 2023- 6- 8 | done |
+|    2 | 2023- 6- 8 | Have a timeout value (-1) which disable it: the messages keep displayed |
+|      | 2023- 6-11 | done |
 |    3 | 2023- 6- 8 | New pull() method |
 |      | 2023- 6- 8 | done |
 

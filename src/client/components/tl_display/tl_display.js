@@ -18,5 +18,7 @@ Template.tl_display.onRendered( function(){
     self.$( '.tl-display .alert[data-tl-count="'+count+'"]' ).css({ top: ( CSS_TOP + CSS_SHIFT*count )+CSS_UNIT });
 
     // remove the message from our local collection after the configured time
-    Meteor.setTimeout( function(){ tlTolert._client.deleteOldest(); }, tlTolert.conf.timeout );
+    if( tlTolert.conf.timeout > 0 ){
+        Meteor.setTimeout( function(){ tlTolert._client.deleteOldest(); }, tlTolert.conf.timeout );
+    }
 });
