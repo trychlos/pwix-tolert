@@ -2,9 +2,9 @@
 
 ## ChangeLog
 
-### 1.3.0-rc
+### 1.3.0
 
-    Release date: xxx
+    Release date: 2023- 6-11
 
     - Accept HTML content (todo #5)
     - Define 'stackFromTop' configuration option to stack from the bottom instead of the top (todo #4)
@@ -51,4 +51,4 @@
 
 ---
 P. Wieser
-- Last updated on 2023, May 1st
+- Last updated on 2023, June 11th

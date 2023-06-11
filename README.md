@@ -109,4 +109,4 @@ Each of these dependencies should be installed at application level:
 
 ---
 P. Wieser
-- Last updated on 2023, Apr. 30th
+- Last updated on 2023, June 11th
