@@ -10,7 +10,8 @@
 
 |   Id | Date       | Description and comment(s) |
 | ---: | :---       | :---                       |
-|    6 |  |  |
+|    6 | 2023- 6-15 | configure() be consistent when verbose on. should be prefixed with 'pwix:tolert'  |
+|    7 |  |  |
 
 ---
 ## Done
