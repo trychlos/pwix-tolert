@@ -5,6 +5,6 @@
 import './global.js';
 import './constants.js';
 //
-import './config.js';
-import './functions.js';
-import './startup.js';
+import './configure.js';
+import './private_fn.js';
+import './public_fn.js';

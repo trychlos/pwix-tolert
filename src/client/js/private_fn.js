@@ -1,5 +1,5 @@
 /*
- * pwix:tolert/src/client/js/functions.js
+ * pwix:tolert/src/client/js/private_fn.js
  */
 
 tlTolert._client = {
