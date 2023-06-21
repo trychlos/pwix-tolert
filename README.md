@@ -42,7 +42,19 @@ Package is very simple, has a single configuration option:
 
     Any value less or equal to zero disables the timeout.
 
-Please note, as an explicit reminder for the fools, that, because the Meteor packages are instanciated at application level, they can be configured once at most, and only once at most. Each addtionnal call to `tlTolert.configure()` will just override the previous one. You have been warned: **only the application should configure a package**.
+- `verbosity`
+
+    The verbosity level.
+
+    Can be `TL_VERBOSE_NONE` or an or-ed combination of following values:
+
+    - `TL_VERBOSE_CONFIGURE`
+
+        Trace configuration actions and their result.
+
+    Defaut value is `TL_VERBOSE_NONE`.
+
+Please note, as an explicit reminder, that, because the Meteor packages are instanciated at application level, they can be configured once at most, and only once at most. Each addtionnal call to `tlTolert.configure()` will just override the previous one. You have been warned: **only the application should configure a package**.
 
 ## Provides
 
