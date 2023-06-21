@@ -6,7 +6,8 @@
 
     Release date: 
 
-    - 
+    - Introduce verbosity levels (+ fix todo #6)
+    - configure() now acts both as a getter and a setter
 
 ### 1.3.0
 
