@@ -9,6 +9,7 @@
     - Introduce verbosity levels (+ fix todo #6)
     - configure() now acts both as a getter and a setter
     - Rename conf to _conf making clearer this is a private variable
+    - Fix tlTolert.success() public function
 
 ### 1.3.0
 

@@ -39,7 +39,7 @@ tlTolert.pull = function(){
  * @locus Client
  * @param {String} msg
  */
-tltTolert.success = function( msg ){
+tlTolert.success = function( msg ){
     tlTolert._client.display({
         type: 'success',
         message: msg
