@@ -8,7 +8,7 @@ tlTolert._client = {
         const array = tlTolert._client.Messages.find({}, { sort: { stamp: 1 }}).fetch();
         if( array.length ){
             const height = parseInt( $( '.tl-display .alert[data-tl-count="0"]' ).css( 'height' ));
-            const start = tlTolert.conf.stackFromTop ? 'top' : 'bottom';
+            const start = tlTolert._conf.stackFromTop ? 'top' : 'bottom';
             let args = {};
             args[start] = '-=' + (height+CSS_MARGIN) + 'px'
             $( '.tlMessage .alert' ).css( args );
