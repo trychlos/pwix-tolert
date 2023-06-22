@@ -2,9 +2,9 @@
 
 ## ChangeLog
 
-### 1.3.1-rc
+### 1.3.1
 
-    Release date: 
+    Release date: 2023- 6-22
 
     - Introduce verbosity levels (+ fix todo #6)
     - configure() now acts both as a getter and a setter
@@ -60,4 +60,4 @@
 
 ---
 P. Wieser
-- Last updated on 2023, June 11th
+- Last updated on 2023, June 22nd
