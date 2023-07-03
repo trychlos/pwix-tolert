@@ -2,11 +2,11 @@
 
 ## ChangeLog
 
-### 1.3.2-rc
+### 1.4.0-rc
 
     Release date: 
 
-    - 
+    - Rename tlTolert globally exported to Tolert (bumping candidate version number)
 
 ### 1.3.1
 
@@ -15,7 +15,7 @@
     - Introduce verbosity levels (+ fix todo #6)
     - configure() now acts both as a getter and a setter
     - Rename conf to _conf making clearer this is a private variable
-    - Fix tlTolert.success() public function
+    - Fix Tolert.success() public function
 
 ### 1.3.0
 

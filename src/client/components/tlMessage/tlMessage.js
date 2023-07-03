@@ -25,7 +25,7 @@ Template.tlMessage.onCreated( function(){
     self.autorun(() => {
         let _messages = [];
         let _count = 0;
-        tlTolert._client.Messages.find({}, { sort: { stamp: 1 }}).fetch().every(( it ) => {
+        Tolert._client.Messages.find({}, { sort: { stamp: 1 }}).fetch().every(( it ) => {
             it.count = _count++;
             _messages.push( it );
             return true;

@@ -7,8 +7,8 @@
  * @locus Client
  * @param {String|Exception} err 
  */
-tlTolert.error = function( err ){
-    tlTolert._client.display({
+Tolert.error = function( err ){
+    Tolert._client.display({
         type: 'danger',
         message: ( typeof err === 'string' ) ? err : err.message
     });
@@ -19,8 +19,8 @@ tlTolert.error = function( err ){
  * @locus Client
  * @param {String} msg
  */
-tlTolert.info = function( msg ){
-    tlTolert._client.display({
+Tolert.info = function( msg ){
+    Tolert._client.display({
         type: 'info',
         message: msg
     });
@@ -30,8 +30,8 @@ tlTolert.info = function( msg ){
  * Erase the oldest message, shifting the stack
  * @locus Client
  */
-tlTolert.pull = function(){
-    tlTolert._client.deleteOldest();
+Tolert.pull = function(){
+    Tolert._client.deleteOldest();
 };
 
 /**
@@ -39,8 +39,8 @@ tlTolert.pull = function(){
  * @locus Client
  * @param {String} msg
  */
-tlTolert.success = function( msg ){
-    tlTolert._client.display({
+Tolert.success = function( msg ){
+    Tolert._client.display({
         type: 'success',
         message: msg
     });
@@ -51,8 +51,8 @@ tlTolert.success = function( msg ){
  * @locus Client
  * @param {String} msg
  */
-tlTolert.warning = function( msg ){
-    tlTolert._client.display({
+Tolert.warning = function( msg ){
+    Tolert._client.display({
         type: 'warning',
         message: msg
     });

@@ -1,6 +1,6 @@
 Package.describe({
     name: 'pwix:tolert',
-    version: '1.3.2-rc',
+    version: '1.4.0-rc',
     summary: 'A Bootstrap-based Meteor package which provides toast-alert combination as auto-remove messages',
     git: 'https://github.com/trychlos/pwix-tolert',
     documentation: 'README.md'
@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse( function( api ){
     configure( api );
     api.export([
-        'tlTolert',
+        'Tolert',
         'TL_VERBOSE_NONE',
         'TL_VERBOSE_CONFIGURE'
     ]);

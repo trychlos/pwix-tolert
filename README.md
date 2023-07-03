@@ -15,14 +15,14 @@ _Disclaimer_: this is not my own idea, but don't remember where I have found tha
 Very simple indeed. Just import the globally exported object, and enjoy:
 
 ```
-    import { tlTolert } from 'meteor/pwix:tolert';
+    import { Tolert } from 'meteor/pwix:tolert';
     ...
-    tlTolert.info( 'An information message' );
+    Tolert.info( 'An information message' );
 ```
 
 ## Configuration
 
-The package's behavior can be configured through a call to the `tlTolert.configure()` method, with just a single javascript object argument, which itself should only contains the options you want override.
+The package's behavior can be configured through a call to the `Tolert.configure()` method, with just a single javascript object argument, which itself should only contains the options you want override.
 
 Package is very simple, has a single configuration option:
 
@@ -54,11 +54,11 @@ Package is very simple, has a single configuration option:
 
     Defaut value is `TL_VERBOSE_NONE`.
 
-Please note, as an explicit reminder, that, because the Meteor packages are instanciated at application level, they can be configured once at most, and only once at most. Each addtionnal call to `tlTolert.configure()` will just override the previous one. You have been warned: **only the application should configure a package**.
+Please note, as an explicit reminder, that, because the Meteor packages are instanciated at application level, they can be configured once at most, and only once at most. Each addtionnal call to `Tolert.configure()` will just override the previous one. You have been warned: **only the application should configure a package**.
 
 ## Provides
 
-### `tlTolert`
+### `Tolert`
 
 The globally exported object.
 
@@ -67,29 +67,29 @@ The globally exported object.
 
 All these methods are only available on the client side.
 
-- `tlTolert.success()`
+- `Tolert.success()`
 
     ![success](/maintainer/png/success.png)
 
-- `tlTolert.error()`
+- `Tolert.error()`
 
     ![error](/maintainer/png/error.png)
 
-- `tlTolert.warning()`
+- `Tolert.warning()`
 
     ![warning](/maintainer/png/warning.png)
 
-- `tlTolert.info()`
+- `Tolert.info()`
 
     ![info](/maintainer/png/info.png)
 
 These four methods use the corresponding Bootstrap color codes as a colored background of the tolert.
 
-- `tlTolert.pull()`
+- `Tolert.pull()`
 
     Erase the oldest message.
 
-    Note: the oldest message is automatically erased after the configured timeout. This method is defined for tests purposes.
+    Note: the oldest message is normally automatically erased after the configured timeout. This method is mainly defined for tests purposes.
 
 ### Blaze components
 

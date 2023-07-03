@@ -17,7 +17,7 @@ Template.tl_display.onRendered( function(){
     const count = Template.currentData().msg.count;
     //console.debug( 'count', count );
 
-    const start = tlTolert._conf.stackFromTop ? 'top' : 'bottom';
+    const start = Tolert._conf.stackFromTop ? 'top' : 'bottom';
     let args = {};
     let distance = CSS_TOP;
 
@@ -31,13 +31,13 @@ Template.tl_display.onRendered( function(){
     self.$( '.tl-display .alert[data-tl-count="'+count+'"]' ).css( args );
 
     // remove the message from our local collection after the configured time
-    if( tlTolert._conf.timeout > 0 ){
-        //console.debug( 'set timeout', tlTolert._conf.timeout, Date.now());
+    if( Tolert._conf.timeout > 0 ){
+        //console.debug( 'set timeout', Tolert._conf.timeout, Date.now());
         Meteor.setTimeout( function(){
             //console.debug( 'deleteOldest', Date.now());
-            tlTolert._client.deleteOldest();
+            Tolert._client.deleteOldest();
         },
-            tlTolert._conf.timeout
+            Tolert._conf.timeout
         );
     }
 });
