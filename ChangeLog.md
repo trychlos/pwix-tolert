@@ -2,9 +2,9 @@
 
 ## ChangeLog
 
-### 1.4.0-rc
+### 1.4.0
 
-    Release date: 
+    Release date: 2023- 7- 3
 
     - Rename tlTolert globally exported to Tolert (bumping candidate version number)
     - Change constants definitions to not pollute global space
@@ -68,4 +68,4 @@
 
 ---
 P. Wieser
-- Last updated on 2023, June 22nd
+- Last updated on 2023, July 3rd

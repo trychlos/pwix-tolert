@@ -113,10 +113,11 @@ Starting with v 1.1.0, and in accordance with advices from [the Meteor Guide](ht
 
 Instead we check npm versions of installed packages at runtime, on server startup, in development environment.
 
-Dependencies as of v 1.1.0:
+Dependencies as of v 1.4.0:
 ```
-    @popperjs/core, starting with v 2.11,
-    bootstrap, starting with v 5.2.
+    '@popperjs/core': '^2.11.6',
+    'bootstrap': '^5.2.1',
+    'lodash': '^4.17.21'
 ```
 Each of these dependencies should be installed at application level:
 ```
@@ -125,4 +126,4 @@ Each of these dependencies should be installed at application level:
 
 ---
 P. Wieser
-- Last updated on 2023, June 22nd
+- Last updated on 2023, July 3rd
