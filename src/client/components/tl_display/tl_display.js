@@ -32,6 +32,12 @@ Template.tl_display.onRendered( function(){
 
     // remove the message from our local collection after the configured time
     if( tlTolert._conf.timeout > 0 ){
-        Meteor.setTimeout( function(){ tlTolert._client.deleteOldest(); }, tlTolert._conf.timeout );
+        //console.debug( 'set timeout', tlTolert._conf.timeout, Date.now());
+        Meteor.setTimeout( function(){
+            //console.debug( 'deleteOldest', Date.now());
+            tlTolert._client.deleteOldest();
+        },
+            tlTolert._conf.timeout
+        );
     }
 });
