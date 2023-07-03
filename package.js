@@ -9,9 +9,7 @@ Package.describe({
 Package.onUse( function( api ){
     configure( api );
     api.export([
-        'Tolert',
-        'TL_VERBOSE_NONE',
-        'TL_VERBOSE_CONFIGURE'
+        'Tolert'
     ]);
     api.mainModule( 'src/client/js/index.js', 'client' );
     api.mainModule( 'src/server/js/index.js', 'server' );

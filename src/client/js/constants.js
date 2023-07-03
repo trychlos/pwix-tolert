@@ -4,8 +4,13 @@
 
 // exported
 
-TL_VERBOSE_NONE = 0;
-TL_VERBOSE_CONFIGURE = 0x01 << 0;
+Tolert.C = {
+    Verbose: {
+        NONE: 0,
+        CONFIGURE: 0x01 << 0,
+        TIMEOUT:   0x01 << 1
+    }
+};
 
 // non exported
 

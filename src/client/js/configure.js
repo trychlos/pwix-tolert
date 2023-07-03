@@ -5,10 +5,12 @@
 import _ from 'lodash';
 
 Tolert._defaults = {
+    // stack alerts from the top of the window
+    stackFromTop: true,
     // timeout in ms to erase the message after having been displayed
     timeout: 3000,
-    stackFromTop: true,
-    verbosity: TL_VERBOSE_NONE
+    // verbosity level
+    verbosity: Tolert.C.Verbose.NONE
 };
 
 _.merge( Tolert._conf, Tolert._defaults );
@@ -22,7 +24,7 @@ Tolert.configure = function( o ){
     if( o && _.isObject( o )){
         _.merge( Tolert._conf, Tolert._defaults, o );
         // be verbose if asked for
-        if( Tolert._conf.verbosity & TL_VERBOSE_CONFIGURE ){
+        if( Tolert._conf.verbosity & Tolert.C.Verbose.CONFIGURE ){
             console.log( 'pwix:tolert configure() with', o, 'building', Tolert._conf );
         }
     }

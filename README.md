@@ -46,13 +46,17 @@ Package is very simple, has a single configuration option:
 
     The verbosity level.
 
-    Can be `TL_VERBOSE_NONE` or an or-ed combination of following values:
+    Can be `Tolert.C.Verbose.NONE` or an or-ed combination of following values:
 
-    - `TL_VERBOSE_CONFIGURE`
+    - `Tolert.C.Verbose.CONFIGURE`
 
         Trace configuration actions and their result.
 
-    Defaut value is `TL_VERBOSE_NONE`.
+    - `Tolert.C.Verbose.TIMEOUT`
+
+        Trace messages insertions and deletions.
+
+    Defaut value is `Tolert.C.Verbose.NONE`.
 
 Please note, as an explicit reminder, that, because the Meteor packages are instanciated at application level, they can be configured once at most, and only once at most. Each addtionnal call to `Tolert.configure()` will just override the previous one. You have been warned: **only the application should configure a package**.
 

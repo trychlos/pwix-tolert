@@ -7,6 +7,8 @@
     Release date: 
 
     - Rename tlTolert globally exported to Tolert (bumping candidate version number)
+    - Change constants definitions to not pollute global space
+    - Introduce new Tolert.C.Verbose.TIMEOUT to trace insertions and deletions of the messages
 
 ### 1.3.1
 

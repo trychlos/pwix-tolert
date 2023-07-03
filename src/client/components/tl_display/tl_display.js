@@ -32,9 +32,13 @@ Template.tl_display.onRendered( function(){
 
     // remove the message from our local collection after the configured time
     if( Tolert._conf.timeout > 0 ){
-        //console.debug( 'set timeout', Tolert._conf.timeout, Date.now());
+        if( Tolert._conf.verbosity & Tolert.C.Verbose.TIMEOUT ){
+            console.log( 'pwix:tolert start timeout at', Date.now());
+        }
         Meteor.setTimeout( function(){
-            //console.debug( 'deleteOldest', Date.now());
+            if( Tolert._conf.verbosity & Tolert.C.Verbose.TIMEOUT ){
+                console.log( 'pwix:tolert end timeout at', Date.now());
+            }
             Tolert._client.deleteOldest();
         },
             Tolert._conf.timeout

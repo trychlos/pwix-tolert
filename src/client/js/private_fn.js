@@ -21,6 +21,9 @@ Tolert._client = {
     //  - msg: the message to be displayed
     // add a stamp to be able to identify the oldest later
     display( o ){
+        if( Tolert._conf.verbosity & Tolert.C.Verbose.TIMEOUT ){
+            console.log( 'pwix:tolert message insertion at', Date.now());
+        }
         Tolert._client.Messages.insert({ ...o, stamp: Date.now() });
     },
 
