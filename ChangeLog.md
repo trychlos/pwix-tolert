@@ -6,7 +6,7 @@
 
     Release date: 
 
-    - 
+    - Bump Meteor requirement to 2.9.0
 
 ### 1.4.0
 
