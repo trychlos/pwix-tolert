@@ -2,9 +2,9 @@
 
 ## ChangeLog
 
-### 1.4.1-rc
+### 1.4.1
 
-    Release date: 
+    Release date: 2023- 9-12
 
     - Bump Meteor requirement to 2.9.0
 
@@ -74,4 +74,4 @@
 
 ---
 P. Wieser
-- Last updated on 2023, July 3rd
+- Last updated on 2023, Sept. 12th
