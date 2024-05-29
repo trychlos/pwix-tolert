@@ -1,5 +1,5 @@
 /*
- * pwix:tolert/src/client/js/config.js
+ * pwix:tolert/src/common/js/configure.js
  */
 
 import _ from 'lodash';

@@ -1,5 +1,5 @@
 /*
- * pwix:tolert/src/client/js/constants.js
+ * pwix:tolert/src/common/js/constants.js
  */
 
 // exported
