@@ -2,11 +2,12 @@
 
 ## ChangeLog
 
-### 1.4.3-rc
+### 1.5-0-rc
 
     Release date: 
 
-    - 
+    - Let the package be configured on both client and server sides
+      (bumping the candidate release number as this is a backward-compatible extension)
 
 ### 1.4.2
 
