@@ -28,6 +28,7 @@ function configure( api ){
     api.use( 'ecmascript' );
     api.use( 'less@4.0.0', 'client' );
     api.use( 'mongo', 'client' );
+    api.use( 'pwix:ui-bootstrap5@2.0.0-rc', 'client' );
     api.use( 'tmeasday:check-npm-versions@1.0.2 || 2.0.0-beta.0', 'server' );
     api.addFiles( 'src/client/components/tlMessage/tlMessage.js', 'client' );
 }

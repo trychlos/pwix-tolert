@@ -4,10 +4,11 @@
 
 ### 1.5-0-rc
 
-    Release date: 
+    Release date:
 
     - Let the package be configured on both client and server sides
       (bumping the candidate release number as this is a backward-compatible extension)
+    - Replace bootstrap NPM dependency with pwix:ui-bootstrap5
 
 ### 1.4.2
 
